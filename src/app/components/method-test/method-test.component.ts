@@ -18,7 +18,7 @@ export class MethodTestComponent {
   }
 
   // Private method
-  public calculateSubtract(a: number, b: number): number {
+  private calculateSubtract(a: number, b: number): number {
     return a - b;
   }
   // Public method
