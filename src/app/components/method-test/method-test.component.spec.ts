@@ -16,7 +16,7 @@ describe('MethodTestComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should do something', () => {
+  it('should do something correctly', () => {
     // create a constant and call SpyOn
     const doSomethingSpy = jest.spyOn(component, 'doSomething');
 
@@ -33,5 +33,13 @@ describe('MethodTestComponent', () => {
 
     // Check that the result is 8
     expect(result).toBe(8);
+  });
+
+  it('should subtract two numbers correctly using private mehod', () => {
+    // create a constant
+    const result = component.subtract(5, 3);
+
+    // Check that the result is 8
+    expect(result).toBe(2);
   });
 });

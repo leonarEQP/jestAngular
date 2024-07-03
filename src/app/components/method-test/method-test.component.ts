@@ -16,4 +16,13 @@ export class MethodTestComponent {
   sum(a: number, b: number): number {
     return a + b;
   }
+
+  // Private method
+  public calculateSubtract(a: number, b: number): number {
+    return a - b;
+  }
+  // Public method
+  public subtract(a: number, b: number): number {
+    return this.calculateSubtract(a, b);
+  }
 }
