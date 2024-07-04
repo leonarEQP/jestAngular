@@ -1,17 +1,17 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { XitComponent } from './xit.component';
+import { ItOnlyComponent } from './it.only.component';
 
-describe('XitComponent', () => {
-  let component: XitComponent;
-  let fixture: ComponentFixture<XitComponent>;
+describe('ItOnlyComponent', () => {
+  let component: ItOnlyComponent;
+  let fixture: ComponentFixture<ItOnlyComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [XitComponent],
+      imports: [ItOnlyComponent],
     }).compileComponents();
 
-    fixture = TestBed.createComponent(XitComponent);
+    fixture = TestBed.createComponent(ItOnlyComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
@@ -21,8 +21,8 @@ describe('XitComponent', () => {
     expect(result).toBe(32);
   });
 
-  // XIT EXCLUDES THIS TEST
-  xit('should divide two numbers correctly', () => {
+  // ONLY THIS TEST WILL BE RUN INSIDE THE SUITE
+  it.only('should divide two numbers correctly', () => {
     const result = component.divide(8, 4);
     expect(result).toBe(2);
   });

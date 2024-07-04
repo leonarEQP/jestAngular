@@ -21,7 +21,7 @@ describe('FitComponent', () => {
     expect(result).toBe(32);
   });
 
-  // FIT FOCUS TEST
+  // FIT EXECUTES ONLY THIS TEST
   fit('should divide two numbers correctly', () => {
     const result = component.divide(8, 4);
     expect(result).toBe(2);
