@@ -1,17 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { XDescribe } from './xdescribe.component';
 
-// XIT EXCLUDES THIS TEST SUITE
-xdescribe('XDescribe', () => {
-  let component: XDescribe;
-  let fixture: ComponentFixture<XDescribe>;
+import { DescribeOnlyComponent } from './describe.only.component';
+
+// ONLY THIS SUITE WILL BE RUN
+describe.only('DescribeOnlyComponent', () => {
+  let component: DescribeOnlyComponent;
+  let fixture: ComponentFixture<DescribeOnlyComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [XDescribe],
+      imports: [DescribeOnlyComponent],
     }).compileComponents();
 
-    fixture = TestBed.createComponent(XDescribe);
+    fixture = TestBed.createComponent(DescribeOnlyComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
@@ -32,16 +33,16 @@ xdescribe('XDescribe', () => {
   });
 });
 
-describe('XDescribe', () => {
-  let component: XDescribe;
-  let fixture: ComponentFixture<XDescribe>;
+describe('DescribeOnlyComponent', () => {
+  let component: DescribeOnlyComponent;
+  let fixture: ComponentFixture<DescribeOnlyComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [XDescribe],
+      imports: [DescribeOnlyComponent],
     }).compileComponents();
 
-    fixture = TestBed.createComponent(XDescribe);
+    fixture = TestBed.createComponent(DescribeOnlyComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -1,17 +1,17 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { XDescribe } from './xdescribe.component';
+import { FDescribe } from './fdescribe.component';
 
-// XIT EXCLUDES THIS TEST SUITE
-xdescribe('XDescribe', () => {
-  let component: XDescribe;
-  let fixture: ComponentFixture<XDescribe>;
+// ONLY TEST THIS SUITE
+fdescribe('FDescribe', () => {
+  let component: FDescribe;
+  let fixture: ComponentFixture<FDescribe>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [XDescribe],
+      imports: [FDescribe],
     }).compileComponents();
 
-    fixture = TestBed.createComponent(XDescribe);
+    fixture = TestBed.createComponent(FDescribe);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
@@ -32,22 +32,22 @@ xdescribe('XDescribe', () => {
   });
 });
 
-describe('XDescribe', () => {
-  let component: XDescribe;
-  let fixture: ComponentFixture<XDescribe>;
+describe('FDescribe', () => {
+  let component: FDescribe;
+  let fixture: ComponentFixture<FDescribe>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [XDescribe],
+      imports: [FDescribe],
     }).compileComponents();
 
-    fixture = TestBed.createComponent(XDescribe);
+    fixture = TestBed.createComponent(FDescribe);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
 
   it('should multiply two numbers correctly', () => {
-    const result = component.multiply(9, 3);
-    expect(result).toBe(27);
+    const result = component.multiply(2, 3);
+    expect(result).toBe(6);
   });
 });
