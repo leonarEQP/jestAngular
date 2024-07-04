@@ -9,3 +9,5 @@ TestBed.initTestEnvironment(
   BrowserDynamicTestingModule,
   platformBrowserDynamicTesting()
 );
+
+Object.defineProperty(window, 'alert', { value: () => {} });
