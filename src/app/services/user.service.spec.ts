@@ -21,3 +21,36 @@ describe('UserService', () => {
     expect(users).toContain('David');
   });
 });
+
+// USE MOCKING
+/*describe('UserService', () => {
+  let service: UserService;
+  let mockUsers: string[]; // Declaración de la variable mockUsers
+
+  beforeEach(() => {
+    TestBed.configureTestingModule({});
+    service = TestBed.inject(UserService);
+    mockUsers = ['Leonar', 'Elena', 'Jose Miguel']; // Inicialización de mockUsers
+  });
+
+  it('should be created', () => {
+    expect(service).toBeTruthy();
+  });
+
+  it('should return users', () => {
+    jest.spyOn(service, 'getUsers').mockReturnValue(mockUsers);
+
+    const users = service.getUsers();
+    expect(users).toEqual(mockUsers);
+  });
+
+  it('should add a user', () => {
+    const mockUser = 'David';
+    jest.spyOn(service, 'addUser').mockImplementation((user: string) => {
+      mockUsers.push(user);
+    });
+
+    service.addUser(mockUser);
+    expect(mockUsers).toContain(mockUser);
+  });
+});*/
