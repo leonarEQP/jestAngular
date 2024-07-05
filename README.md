@@ -1,27 +1,47 @@
 # JestAngular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.8.
+This project deals with test cases with the intention of configuring Jest in Angular to understand how unit tests work.
 
-## Development server
+## Requeriments
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Angular 17<br>
+Jest
 
-## Code scaffolding
+## Tested:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+$\color{orange}{\textsf{Private Methods | Public Methods}}$<br>
+$\color{orange}{\textsf{Subscribe | Pipe | Service | Mock}}$<br>
+$\color{orange}{\textsf{xit | fit | it.only | xdescribe | fdescribe | describe.only}}$<br>
+$\color{orange}{\textsf{form | document window | delay | observable}}$<br>
 
-## Build
+## Installation
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Download or clone repository and install dependencies
 
 ## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Run $\color{orange}{\textsf{npm run test}}$ to execute the unit tests
 
-## Running end-to-end tests
+## Result
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+$\color{green}{\textsf{PASS}}$ src/app/components/commands-test/describe.only/describe.only.component.spec.ts<br>
+$\color{green}{\textsf{PASS}}$ src/app/services/user.service.spec.ts<br>
+$\color{green}{\textsf{PASS}}$ src/app/components/commands-test/xdescribe/xdescribe.component.spec.ts<br>
+$\color{green}{\textsf{PASS}}$ src/app/components/commands-test/fdescribe/fdescribe.component.spec.ts<br>
+$\color{green}{\textsf{PASS}}$ src/app/components/method-test/method-test.component.spec.ts<br>
+$\color{green}{\textsf{PASS}}$ src/app/components/subscribe-test/subscribe-test.component.spec.ts<br>
+$\color{green}{\textsf{PASS}}$ src/app/components/settimeout-test/settimeout-test.component.spec.ts<br>
+$\color{green}{\textsf{PASS}}$ src/app/components/form-test/form.component.spec.ts<br>
+$\color{green}{\textsf{PASS}}$ src/app/components/commands-test/it.only/it.only.component.spec.ts<br>
+$\color{green}{\textsf{PASS}}$ src/app/components/commands-test/fit/fit.component.spec.ts<br>
+$\color{green}{\textsf{PASS}}$ src/app/app.component.spec.ts<br>
+$\color{green}{\textsf{PASS}}$ src/app/components/commands-test/xit/xit.component.spec.ts<br>
+$\color{green}{\textsf{PASS}}$ src/app/components/document/document.component.spec.ts<br>
+$\color{green}{\textsf{PASS}}$ src/app/components/observable-delay-test/observable-delay-test.component.spec.ts<br>
+$\color{green}{\textsf{PASS}}$ src/app/components/delay-test/delay-test.component.spec.ts<br>
+$\color{green}{\textsf{PASS}}$ src/app/pipes/custom.pipe.spec.ts<br>
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Test Suites: $\color{lime}{\texttt{16 passed}}$, 16 total<br>
+Tests: $\color{orange}{\texttt{10 skipped}}$, $\color{lime}{\texttt{30 passed}}$, 40 total<br>
+Snapshots: 0 total<br>
+Time: 25.434 s

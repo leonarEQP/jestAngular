@@ -1,4 +1,3 @@
-// my-component.component.spec.ts
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { DelayComponent } from './delay-test.component';
 
